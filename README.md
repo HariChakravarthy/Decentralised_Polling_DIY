@@ -42,6 +42,8 @@ Features Added by Hari:
 mapping(address => uint256) public pollsCreated;
 uint256 public MAX_POLLS_PER_USER = 1;
 
+when i try to create the second poll it will display failed to create the poll i uploaded the screenshot of that .
+
 require(pollsCreated[msg.sender] < MAX_POLLS_PER_USER, "Poll limit reached");
 pollsCreated[msg.sender]++;
 
